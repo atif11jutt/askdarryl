@@ -1,11 +1,1116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ask Darryl AI — Your personal invention coach powered by AI. Get expert guidance on patents, manufacturing, USA business registration, and launching your product to the world. From 2x INPEX Award-winning inventor Darryl Minchenko.">
+<meta name="keywords" content="ask darryl ai, invention coach, patent help, provisional patent, USPTO, manufacturing China, business registration, Dream Kit System, Darryl Minchenko, inventor AI, product launch">
+<meta property="og:title" content="Ask Darryl AI — Your Personal Inventor Coach">
+<meta property="og:description" content="Get 24/7 AI-powered coaching from a 2x INPEX Award-winning inventor. Patents, manufacturing, business registration — all in one place.">
+<meta property="og:url" content="https://askdarryl.ai">
+<meta property="og:type" content="website">
+<title>Ask Darryl AI — Your Personal Inventor Coach | 24/7 AI-Powered Guidance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;900&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital@1&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════
+   RESET & VARIABLES
+═══════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --navy:    #0b0f24;
+  --navy2:   #111827;
+  --navy3:   #161d35;
+  --orange:  #e65c00;
+  --orange2: #ff7a1a;
+  --gold:    #f0a500;
+  --green:   #00b67a;
+  --green2:  #00d48e;
+  --purple:  #7c3aed;
+  --purple2: #9f67ff;
+  --white:   #ffffff;
+  --off:     #f4f3ef;
+  --light:   #eceae5;
+  --muted:   #5a6375;
+  --fh: 'Barlow Condensed', sans-serif;
+  --fb: 'Barlow', sans-serif;
+  --fs: 'Lora', serif;
+  --r: 14px;
+}
+body{font-family:var(--fb);background:var(--navy);color:var(--white);overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button{cursor:pointer;font-family:var(--fb)}
+
+/* ═══════════════════════════════════════════
+   SCROLLBAR
+═══════════════════════════════════════════ */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--navy)}
+::-webkit-scrollbar-thumb{background:var(--green);border-radius:4px}
+
+/* ═══════════════════════════════════════════
+   UTILITIES
+═══════════════════════════════════════════ */
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+.section{padding:96px 0}
+.section-label{display:inline-flex;align-items:center;gap:8px;font-family:var(--fh);font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--green);margin-bottom:14px}
+.section-label::before{content:'';width:20px;height:2px;background:var(--green);border-radius:2px;display:block}
+.section-title{font-family:var(--fh);font-size:clamp(30px,5vw,52px);font-weight:900;text-transform:uppercase;line-height:1.0;margin-bottom:16px}
+.section-title span{color:var(--green)}
+.section-title.orange span{color:var(--orange)}
+.section-sub{font-size:17px;color:rgba(255,255,255,.6);line-height:1.75;max-width:580px}
+.text-center{text-align:center}
+.text-center .section-sub{margin:0 auto}
+.text-center .section-label{margin-left:auto;margin-right:auto}
+
+/* ═══════════════════════════════════════════
+   BUTTONS
+═══════════════════════════════════════════ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--fh);font-weight:700;text-transform:uppercase;letter-spacing:1px;border-radius:10px;border:none;transition:all .25s ease;text-align:center;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.btn-lg{padding:18px 40px;font-size:18px}
+.btn-md{padding:14px 28px;font-size:15px}
+.btn-sm{padding:10px 20px;font-size:13px}
+.btn-green{background:var(--green);color:var(--navy);box-shadow:0 8px 28px rgba(0,182,122,.4)}
+.btn-green:hover{background:var(--green2);transform:translateY(-3px);box-shadow:0 14px 36px rgba(0,182,122,.5);color:var(--navy)}
+.btn-orange{background:var(--orange);color:#fff;box-shadow:0 8px 28px rgba(230,92,0,.4)}
+.btn-orange:hover{background:var(--orange2);transform:translateY(-3px);box-shadow:0 14px 36px rgba(230,92,0,.5);color:#fff}
+.btn-outline-white{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.3)}
+.btn-outline-white:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.6)}
+.btn-outline-green{background:transparent;color:var(--green);border:1.5px solid rgba(0,182,122,.4)}
+.btn-outline-green:hover{background:rgba(0,182,122,.1);border-color:var(--green)}
+.btn-full{width:100%}
+
+/* ═══════════════════════════════════════════
+   NAV
+═══════════════════════════════════════════ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:16px 24px;transition:all .3s}
+.nav.scrolled{background:rgba(11,15,36,.95);backdrop-filter:blur(12px);box-shadow:0 4px 30px rgba(0,0,0,.4);padding:12px 24px}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav-logo{font-family:var(--fh);font-size:22px;font-weight:900;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.nav-logo-icon{width:36px;height:36px;border-radius:8px;background:var(--green);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:var(--navy)}
+.nav-logo span{color:var(--green)}
+.nav-links{display:flex;align-items:center;gap:8px}
+.nav-link{font-family:var(--fh);font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.65);padding:8px 14px;border-radius:8px;transition:color .2s}
+.nav-link:hover{color:#fff}
+.nav-cta{margin-left:8px}
+.nav-menu-btn{display:none;background:transparent;border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:8px;color:#fff}
+.nav-menu-btn svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round}
+.mobile-menu{display:none;position:fixed;inset:0;background:rgba(11,15,36,.98);z-index:1000;flex-direction:column;align-items:center;justify-content:center;gap:24px}
+.mobile-menu.open{display:flex}
+.mobile-menu-close{position:absolute;top:20px;right:24px;background:transparent;border:none;color:#fff;font-size:28px}
+.mobile-nav-link{font-family:var(--fh);font-size:28px;font-weight:900;text-transform:uppercase;color:#fff;transition:color .2s}
+.mobile-nav-link:hover{color:var(--green)}
+
+/* ═══════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════ */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:120px 0 80px}
+.hero-bg{position:absolute;inset:0;pointer-events:none}
+.hero-bg-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,182,122,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,182,122,.04) 1px,transparent 1px);background-size:60px 60px}
+.hero-bg-glow1{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0,182,122,.12) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
+.hero-bg-glow2{position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(124,58,237,.1) 0%,transparent 70%);bottom:-50px;left:-50px;pointer-events:none}
+.hero-word{position:absolute;font-family:var(--fh);font-size:clamp(180px,25vw,320px);font-weight:900;color:rgba(255,255,255,.018);line-height:1;user-select:none;right:-30px;top:50%;transform:translateY(-50%);letter-spacing:-8px}
+.hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;position:relative;z-index:1}
+.hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.hero-eyebrow-line{width:32px;height:3px;background:var(--green);border-radius:2px}
+.hero-eyebrow-text{font-family:var(--fh);font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--green)}
+.hero h1{font-family:var(--fh);font-size:clamp(44px,7vw,82px);font-weight:900;text-transform:uppercase;line-height:.95;margin-bottom:24px}
+.hero h1 .line1{display:block;color:var(--white)}
+.hero h1 .line2{display:block;color:var(--green)}
+.hero h1 .line3{display:block;color:rgba(255,255,255,.4);font-size:.65em}
+.hero-lead{font-size:17px;color:rgba(255,255,255,.65);line-height:1.75;margin-bottom:32px;max-width:480px}
+.hero-lead strong{color:var(--white)}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
+.hero-trust{display:flex;flex-wrap:wrap;gap:16px}
+.hero-trust-item{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.5);font-family:var(--fh);font-weight:600;letter-spacing:.5px}
+.hero-trust-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.hero-trust-dot.g{background:var(--green)}
+.hero-trust-dot.o{background:var(--orange)}
+.hero-trust-dot.gold{background:var(--gold)}
+
+/* hero right — chat mockup */
+.hero-right{position:relative}
+.hero-mockup{background:#111827;border:1.5px solid rgba(0,182,122,.25);border-radius:20px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.6);animation:floatMock 5s ease-in-out infinite}
+@keyframes floatMock{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.mock-hdr{background:#0d1a14;padding:16px 20px;display:flex;align-items:center;gap:12px;border-bottom:1px solid rgba(0,182,122,.12)}
+.mock-av{width:40px;height:40px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:18px;font-weight:900;color:var(--navy);flex-shrink:0}
+.mock-name{font-family:var(--fh);font-size:15px;font-weight:900;color:#fff;text-transform:uppercase}
+.mock-status{font-size:12px;color:var(--green);display:flex;align-items:center;gap:5px;margin-top:1px}
+.mock-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.mock-msgs{padding:20px;display:flex;flex-direction:column;gap:12px}
+.mock-msg{max-width:85%;padding:11px 14px;border-radius:4px 14px 14px 14px;font-size:13px;line-height:1.55}
+.mock-msg.ai{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.82);align-self:flex-start}
+.mock-msg.user{background:var(--orange);color:#fff;border-radius:14px 4px 14px 14px;align-self:flex-end}
+.mock-msg strong{color:var(--green)}
+.mock-inp{padding:12px 16px;border-top:1px solid rgba(255,255,255,.07);display:flex;gap:8px;align-items:center;background:rgba(255,255,255,.02)}
+.mock-inp-field{flex:1;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:9px 12px;color:rgba(255,255,255,.4);font-size:12px;font-family:var(--fb)}
+.mock-inp-btn{width:36px;height:36px;border-radius:8px;background:var(--orange);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.mock-inp-btn svg{width:14px;height:14px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.hero-badge{position:absolute;top:-14px;right:-14px;background:var(--gold);color:var(--navy);font-family:var(--fh);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1px;padding:8px 16px;border-radius:50px;box-shadow:0 8px 24px rgba(240,165,0,.5);white-space:nowrap}
+
+/* ═══════════════════════════════════════════
+   PROOF BAR
+═══════════════════════════════════════════ */
+.proof-bar{background:linear-gradient(90deg,rgba(0,182,122,.08),rgba(0,182,122,.04));border-top:1px solid rgba(0,182,122,.12);border-bottom:1px solid rgba(0,182,122,.12);padding:20px 0}
+.proof-inner{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:36px}
+.proof-item{display:flex;align-items:center;gap:10px;font-family:var(--fh);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.proof-item:nth-child(1){color:var(--gold)}
+.proof-item:nth-child(2){color:var(--green)}
+.proof-item:nth-child(3){color:#a78bfa}
+.proof-item:nth-child(4){color:var(--orange)}
+.proof-item svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+
+/* ═══════════════════════════════════════════
+   WHAT IS AI SECTION
+═══════════════════════════════════════════ */
+.what-section{background:var(--navy2);padding:96px 0;position:relative;overflow:hidden}
+.what-section::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--green),var(--purple),var(--orange))}
+.what-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.what-features{list-style:none;margin-top:32px;display:flex;flex-direction:column;gap:20px}
+.what-feature{display:flex;align-items:flex-start;gap:16px;padding:20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:var(--r);transition:border-color .25s,transform .25s}
+.what-feature:hover{border-color:rgba(0,182,122,.3);transform:translateX(4px)}
+.what-feat-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.what-feat-icon.g{background:rgba(0,182,122,.15);border:1px solid rgba(0,182,122,.25)}
+.what-feat-icon.o{background:rgba(230,92,0,.15);border:1px solid rgba(230,92,0,.25)}
+.what-feat-icon.p{background:rgba(124,58,237,.15);border:1px solid rgba(124,58,237,.25)}
+.what-feat-icon.gold{background:rgba(240,165,0,.15);border:1px solid rgba(240,165,0,.25)}
+.what-feat-title{font-family:var(--fh);font-size:17px;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:5px}
+.what-feat-body{font-size:13px;color:rgba(255,255,255,.55);line-height:1.65}
+/* stats grid */
+.what-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.what-stat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:var(--r);padding:28px 24px;position:relative;overflow:hidden;transition:transform .25s,border-color .25s}
+.what-stat:hover{transform:translateY(-4px);border-color:rgba(0,182,122,.3)}
+.what-stat::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.what-stat:nth-child(1)::before{background:var(--green)}
+.what-stat:nth-child(2)::before{background:var(--gold)}
+.what-stat:nth-child(3)::before{background:var(--orange)}
+.what-stat:nth-child(4)::before{background:#a78bfa}
+.what-stat-num{font-family:var(--fh);font-size:48px;font-weight:900;line-height:1;margin-bottom:6px}
+.what-stat:nth-child(1) .what-stat-num{color:var(--green)}
+.what-stat:nth-child(2) .what-stat-num{color:var(--gold)}
+.what-stat:nth-child(3) .what-stat-num{color:var(--orange)}
+.what-stat:nth-child(4) .what-stat-num{color:#a78bfa}
+.what-stat-label{font-size:13px;color:rgba(255,255,255,.5);line-height:1.4}
+.what-stat-sublabel{font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.25);margin-top:4px}
+
+/* ═══════════════════════════════════════════
+   HOW IT WORKS
+═══════════════════════════════════════════ */
+.how-section{background:var(--navy);padding:96px 0}
+.how-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:56px;position:relative}
+.how-steps::before{content:'';position:absolute;top:32px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,rgba(0,182,122,.3),transparent);pointer-events:none}
+.how-step{text-align:center;padding:32px 20px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:var(--r);position:relative;transition:border-color .25s,transform .25s}
+.how-step:hover{border-color:rgba(0,182,122,.3);transform:translateY(-5px)}
+.how-step-num{width:56px;height:56px;border-radius:50%;border:2px solid rgba(0,182,122,.35);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:22px;font-weight:900;color:var(--green);margin:0 auto 20px;background:rgba(0,182,122,.08);position:relative;z-index:1}
+.how-step-icon{font-size:26px;margin-bottom:14px}
+.how-step-title{font-family:var(--fh);font-size:18px;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:10px}
+.how-step-body{font-size:13px;color:rgba(255,255,255,.5);line-height:1.65}
+
+/* ═══════════════════════════════════════════
+   EXPERTISE TOPICS
+═══════════════════════════════════════════ */
+.topics-section{background:var(--navy2);padding:96px 0}
+.topics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:52px}
+.topic-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:var(--r);padding:28px 24px;transition:all .25s;position:relative;overflow:hidden}
+.topic-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;opacity:0;transition:opacity .25s}
+.topic-card:hover{border-color:rgba(0,182,122,.3);transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.3)}
+.topic-card:hover::after{opacity:1}
+.topic-card.c1::after{background:var(--green)}
+.topic-card.c2::after{background:var(--gold)}
+.topic-card.c3::after{background:var(--orange)}
+.topic-card.c4::after{background:#a78bfa}
+.topic-card.c5::after{background:var(--green2)}
+.topic-card.c6::after{background:var(--orange2)}
+.topic-icon{font-size:32px;margin-bottom:14px}
+.topic-title{font-family:var(--fh);font-size:19px;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:10px}
+.topic-body{font-size:13px;color:rgba(255,255,255,.52);line-height:1.7}
+.topic-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.topic-tag{font-family:var(--fh);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:50px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.45)}
+
+/* ═══════════════════════════════════════════
+   ABOUT DARRYL
+═══════════════════════════════════════════ */
+.about-section{background:var(--navy);padding:96px 0;position:relative;overflow:hidden}
+.about-section::before{content:'DARRYL';position:absolute;font-family:var(--fh);font-size:clamp(100px,18vw,220px);font-weight:900;color:rgba(255,255,255,.018);top:50%;right:-40px;transform:translateY(-50%);line-height:1;pointer-events:none}
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;position:relative;z-index:1}
+.about-quote{font-family:var(--fs);font-style:italic;font-size:clamp(18px,2.5vw,24px);color:rgba(255,255,255,.8);line-height:1.6;margin-bottom:32px;padding-left:20px;border-left:3px solid var(--green)}
+.about-quote strong{color:var(--white);font-style:normal}
+.about-bio{font-size:15px;color:rgba(255,255,255,.6);line-height:1.8;margin-bottom:28px}
+.about-awards{display:flex;flex-direction:column;gap:12px}
+.about-award{display:flex;align-items:center;gap:14px;background:rgba(240,165,0,.07);border:1px solid rgba(240,165,0,.2);border-radius:10px;padding:14px 18px}
+.about-award-medal{font-size:28px;flex-shrink:0}
+.about-award-year{font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:3px}
+.about-award-name{font-family:var(--fh);font-size:15px;font-weight:700;color:#fff}
+/* timeline */
+.about-timeline{position:relative;padding-left:28px}
+.about-timeline::before{content:'';position:absolute;left:0;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,var(--green),var(--purple),var(--orange))}
+.about-tl-item{position:relative;margin-bottom:32px}
+.about-tl-item:last-child{margin-bottom:0}
+.about-tl-dot{position:absolute;left:-34px;top:4px;width:14px;height:14px;border-radius:50%;border:2px solid var(--green);background:var(--navy);flex-shrink:0}
+.about-tl-year{font-family:var(--fh);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:4px}
+.about-tl-title{font-family:var(--fh);font-size:18px;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:6px}
+.about-tl-body{font-size:13px;color:rgba(255,255,255,.52);line-height:1.65}
+
+/* ═══════════════════════════════════════════
+   PRICING
+═══════════════════════════════════════════ */
+.pricing-section{background:var(--navy2);padding:96px 0;position:relative;overflow:hidden}
+.pricing-section::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--green),var(--purple),var(--orange),var(--gold))}
+.pricing-note{text-align:center;font-family:var(--fh);font-size:16px;font-weight:700;color:rgba(255,255,255,.45);margin-bottom:52px;letter-spacing:.5px}
+.pricing-note del{color:rgba(255,255,255,.25)}
+.pricing-note strong{color:#fff}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+
+/* ── AI card — glowing featured ── */
+.p-card{background:#fff;border-radius:20px;padding:0;position:relative;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s}
+.p-card:hover{transform:translateY(-6px)}
+.p-card.ai-featured{background:linear-gradient(145deg,#0a1628 0%,#0d2018 40%,#0a1628 100%);border:1.5px solid rgba(0,182,122,.4);box-shadow:0 0 0 1px rgba(0,182,122,.1),0 30px 80px rgba(0,182,122,.2);transform:translateY(-8px)}
+.p-card.ai-featured:hover{transform:translateY(-14px);box-shadow:0 0 0 1px rgba(0,182,122,.2),0 40px 100px rgba(0,182,122,.3)}
+.p-card.standard{border:1.5px solid #e8e6e0}
+.p-card.featured-orange{border:2px solid var(--orange);box-shadow:0 20px 60px rgba(230,92,0,.15);transform:translateY(-4px)}
+.p-card.featured-orange:hover{transform:translateY(-10px)}
+/* AI card glow pulse */
+.p-card.ai-featured::before{content:'';position:absolute;inset:-1px;border-radius:21px;background:linear-gradient(135deg,rgba(0,182,122,.3),transparent 50%,rgba(0,214,142,.2));pointer-events:none;animation:borderGlow 3s ease-in-out infinite alternate}
+@keyframes borderGlow{0%{opacity:.5}100%{opacity:1}}
+
+.p-ribbon{position:absolute;top:-13px;left:50%;transform:translateX(-50%);font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 16px;border-radius:50px;white-space:nowrap;z-index:2}
+.p-ribbon.green{background:var(--green);color:var(--navy)}
+.p-ribbon.orange{background:var(--orange);color:#fff}
+
+/* AI card inner */
+.p-card-top{padding:36px 28px 24px}
+.p-card.ai-featured .p-card-top{padding-bottom:20px}
+.p-card-icon{font-size:36px;margin-bottom:12px;line-height:1}
+.p-card-name{font-family:var(--fh);font-size:22px;font-weight:900;text-transform:uppercase;margin-bottom:6px}
+.p-card.ai-featured .p-card-name{color:var(--green)}
+.p-card.standard .p-card-name,.p-card.featured-orange .p-card-name{color:#0b0f24}
+.p-card-tagline{font-size:13px;line-height:1.55;margin-bottom:20px}
+.p-card.ai-featured .p-card-tagline{color:rgba(255,255,255,.55)}
+.p-card.standard .p-card-tagline,.p-card.featured-orange .p-card-tagline{color:#6b7280}
+/* price */
+.p-price-block{margin-bottom:16px}
+.p-original{font-family:var(--fh);font-size:13px;letter-spacing:.5px;text-decoration:line-through;margin-bottom:4px}
+.p-card.ai-featured .p-original{color:rgba(255,255,255,.3)}
+.p-card.standard .p-original,.p-card.featured-orange .p-original{color:#9ca3af}
+.p-price{font-family:var(--fh);font-weight:900;line-height:1}
+.p-card.ai-featured .p-price{color:#fff}
+.p-card.standard .p-price,.p-card.featured-orange .p-price{color:#0b0f24}
+.p-price .amount{font-size:52px}
+.p-price .period{font-size:15px;opacity:.5}
+.p-save{display:inline-block;font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:4px 12px;border-radius:50px;margin-top:8px}
+.p-card.ai-featured .p-save{background:rgba(0,182,122,.2);border:1px solid rgba(0,182,122,.4);color:var(--green)}
+.p-card.standard .p-save,.p-card.featured-orange .p-save{background:#fff5e0;border:1px solid rgba(230,92,0,.3);color:var(--orange)}
+/* divider */
+.p-div{height:1px;margin:0 28px}
+.p-card.ai-featured .p-div{background:rgba(255,255,255,.08)}
+.p-card.standard .p-div,.p-card.featured-orange .p-div{background:#e8e6e0}
+/* features */
+.p-features{list-style:none;padding:20px 28px;flex:1;display:flex;flex-direction:column;gap:10px}
+.p-feat{display:flex;align-items:flex-start;gap:10px;font-size:13px;line-height:1.45}
+.p-card.ai-featured .p-feat{color:rgba(255,255,255,.75)}
+.p-card.standard .p-feat,.p-card.featured-orange .p-feat{color:#374151}
+.p-check{width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;font-size:10px;font-weight:700}
+.p-check.g{background:rgba(0,182,122,.15);color:var(--green)}
+.p-check.o{background:rgba(230,92,0,.1);color:var(--orange)}
+.p-free-tag{background:var(--green);color:var(--navy);font-family:var(--fh);font-size:9px;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:1px;text-transform:uppercase;flex-shrink:0;margin-top:2px}
+.p-ai-tag{background:rgba(0,182,122,.2);color:var(--green);border:1px solid rgba(0,182,122,.35);font-family:var(--fh);font-size:9px;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:1px;text-transform:uppercase;flex-shrink:0;margin-top:2px}
+/* buttons */
+.p-btns{padding:0 28px 28px;display:flex;flex-direction:column;gap:10px}
+/* guarantee */
+.pricing-guarantee{text-align:center;margin-top:28px;font-size:13px;color:rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;gap:7px}
+.pricing-guarantee svg{width:15px;height:15px;stroke:var(--green);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ═══════════════════════════════════════════
+   SAMPLE CONVERSATION
+═══════════════════════════════════════════ */
+.demo-section{background:var(--navy);padding:96px 0}
+.demo-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.demo-chat{background:#111827;border:1.5px solid rgba(0,182,122,.2);border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.demo-chat-hdr{background:#0d1a14;border-bottom:1px solid rgba(0,182,122,.1);padding:14px 18px;display:flex;align-items:center;gap:10px}
+.demo-chat-av{width:36px;height:36px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:14px;font-weight:900;color:var(--navy);flex-shrink:0}
+.demo-chat-name{font-family:var(--fh);font-size:14px;font-weight:900;color:#fff;text-transform:uppercase}
+.demo-chat-status{font-size:11px;color:var(--green)}
+.demo-msgs{padding:18px;display:flex;flex-direction:column;gap:12px}
+.demo-msg{max-width:88%;padding:11px 14px;font-size:13px;line-height:1.6}
+.demo-msg.ai{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:4px 14px 14px 14px;color:rgba(255,255,255,.8);align-self:flex-start}
+.demo-msg.user{background:var(--orange);color:#fff;border-radius:14px 4px 14px 14px;align-self:flex-end}
+.demo-msg strong{color:var(--green)}
+.demo-msg.user strong{color:#fff5e0}
+
+/* ═══════════════════════════════════════════
+   FAQ
+═══════════════════════════════════════════ */
+.faq-section{background:var(--navy2);padding:96px 0;border-top:4px solid rgba(124,58,237,.3)}
+.faq-wrap{max-width:760px;margin:52px auto 0}
+.faq-item{background:rgba(255,255,255,.03);border:1.5px solid rgba(255,255,255,.07);border-radius:12px;margin-bottom:10px;overflow:hidden;transition:border-color .25s}
+.faq-item.open{border-color:var(--green)}
+.faq-btn{width:100%;background:none;border:none;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;cursor:pointer}
+.faq-q{font-family:var(--fh);font-size:17px;font-weight:700;color:#fff}
+.faq-icon{width:26px;height:26px;border-radius:50%;flex-shrink:0;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;transition:all .25s}
+.faq-item.open .faq-icon{background:var(--green);border-color:var(--green);transform:rotate(45deg)}
+.faq-icon svg{width:12px;height:12px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round}
+.faq-item.open .faq-icon svg{stroke:var(--navy)}
+.faq-ans{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s}
+.faq-item.open .faq-ans{max-height:400px;padding-bottom:20px}
+.faq-ans p{font-size:14px;color:rgba(255,255,255,.55);line-height:1.75;padding:0 22px}
+
+/* ═══════════════════════════════════════════
+   FINAL CTA
+═══════════════════════════════════════════ */
+.final-section{background:var(--navy);padding:96px 0;text-align:center;position:relative;overflow:hidden}
+.final-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,182,122,.08) 0%,transparent 65%);pointer-events:none}
+.final-inner{position:relative;z-index:1;max-width:680px;margin:0 auto}
+.final-section h2{font-family:var(--fh);font-size:clamp(36px,6vw,66px);font-weight:900;text-transform:uppercase;line-height:1.0;margin-bottom:20px}
+.final-section h2 span{color:var(--green)}
+.final-section p{font-size:17px;color:rgba(255,255,255,.6);line-height:1.75;margin-bottom:36px}
+.final-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.final-note{margin-top:24px;font-size:12px;color:rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;gap:6px}
+.final-note svg{width:14px;height:14px;stroke:var(--green);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ═══════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════ */
+.footer{background:#080c1e;border-top:1px solid rgba(255,255,255,.06);padding:40px 0}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer-logo{font-family:var(--fh);font-size:18px;font-weight:900;text-transform:uppercase}
+.footer-logo span{color:var(--green)}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-link{font-family:var(--fh);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.35);transition:color .2s}
+.footer-link:hover{color:var(--green)}
+.footer-copy{font-size:12px;color:rgba(255,255,255,.25)}
+
+/* ═══════════════════════════════════════════
+   SCROLL REVEAL
+═══════════════════════════════════════════ */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════ */
+@media(max-width:960px){
+  .hero-inner,.what-inner,.about-inner,.demo-inner{grid-template-columns:1fr;gap:48px}
+  .hero-word{display:none}
+  .pricing-grid{grid-template-columns:1fr;max-width:480px;margin-left:auto;margin-right:auto}
+  .p-card.ai-featured,.p-card.featured-orange{transform:none}
+  .p-card.ai-featured:hover,.p-card.featured-orange:hover{transform:translateY(-6px)}
+  .how-steps{grid-template-columns:1fr 1fr}
+  .how-steps::before{display:none}
+  .topics-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+  .nav-menu-btn{display:flex}
+}
+@media(max-width:600px){
+  .section{padding:64px 0}
+  .topics-grid{grid-template-columns:1fr}
+  .how-steps{grid-template-columns:1fr}
+  .hero-btns,.final-btns{flex-direction:column;align-items:stretch}
+  .proof-inner{gap:18px}
+  .what-stats{grid-template-columns:1fr 1fr}
+  .footer-inner{flex-direction:column;text-align:center}
+}
+</style>
 </head>
 <body>
-    Testing the website... 
+
+<!-- ═══ NAV ═══ -->
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-icon">D</div>
+      Ask<span>Darryl</span>.ai
+    </a>
+    <div class="nav-links">
+      <a href="#what" class="nav-link">What It Does</a>
+      <a href="#topics" class="nav-link">Expertise</a>
+      <a href="#about" class="nav-link">About Darryl</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="https://dreamkitsystem.com/product/ask-darryl-ai-personal-inventor-coach/" target="_blank" class="btn btn-green btn-sm nav-cta">Get Access — $50</a>
+    </div>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="menuClose">✕</button>
+  <a href="#what" class="mobile-nav-link" onclick="closeMobileMenu()">What It Does</a>
+  <a href="#topics" class="mobile-nav-link" onclick="closeMobileMenu()">Expertise</a>
+  <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About Darryl</a>
+  <a href="#pricing" class="mobile-nav-link" onclick="closeMobileMenu()">Pricing</a>
+  <a href="#faq" class="mobile-nav-link" onclick="closeMobileMenu()">FAQ</a>
+  <a href="https://dreamkitsystem.com/product/ask-darryl-ai-personal-inventor-coach/" target="_blank" class="btn btn-green btn-md" onclick="closeMobileMenu()">Get Access — $50</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-bg-glow1"></div>
+    <div class="hero-bg-glow2"></div>
+  </div>
+  <div class="hero-word">AI</div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="reveal">
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-line"></div>
+          <span class="hero-eyebrow-text">2× INPEX Award-Winning Inventor</span>
+        </div>
+        <h1>
+          <span class="line1">Your Personal</span>
+          <span class="line2">Inventor Coach</span>
+          <span class="line3">Powered by AI · Available 24/7</span>
+        </h1>
+        <p class="hero-lead">
+          <strong>Ask Darryl AI</strong> gives you instant, personalized coaching based on 20+ years of real invention experience — patents, manufacturing, business registration, and pitching to major brands. No appointments. No waiting.
+        </p>
+        <div class="hero-btns">
+          <a href="https://dreamkitsystem.com/product/ask-darryl-ai-personal-inventor-coach/" target="_blank" class="btn btn-green btn-lg">
+            <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Start Coaching — $50
+          </a>
+          <a href="#pricing" class="btn btn-outline-white btn-lg">See All Packages</a>
+        </div>
+        <div class="hero-trust">
+          <span class="hero-trust-item"><span class="hero-trust-dot gold"></span>INPEX Gold Medalist 2017</span>
+          <span class="hero-trust-item"><span class="hero-trust-dot g"></span>Gopher Sports Partner</span>
+          <span class="hero-trust-item"><span class="hero-trust-dot o"></span>3 Published Books</span>
+          <span class="hero-trust-item"><span class="hero-trust-dot gold"></span>30 Days Solo in China</span>
+        </div>
+      </div>
+
+      <div class="reveal" style="transition-delay:.15s">
+        <div class="hero-right">
+          <span class="hero-badge">🥇 INPEX Gold Winner</span>
+          <div class="hero-mockup">
+            <div class="mock-hdr">
+              <div class="mock-av">D</div>
+              <div>
+                <div class="mock-name">Ask Darryl AI</div>
+                <div class="mock-status"><span class="mock-dot"></span>Online · darryl@askdarryl.ai</div>
+              </div>
+            </div>
+            <div class="mock-msgs">
+              <div class="mock-msg user">I have an idea for a kids' game. How do I protect it before showing investors?</div>
+              <div class="mock-msg ai">Before showing anyone, do these <strong>3 things</strong>: Document your idea with dated, notarized drawings. File a <strong>$60 USPTO Provisional Patent</strong> — you get 12 months of "Patent Pending" status. Have anyone sign an NDA before any meeting. What's your game concept? I can guide you step by step.</div>
+              <div class="mock-msg user">It's a ring toss and balance challenge for PE classes.</div>
+              <div class="mock-msg ai">That's <strong>exactly</strong> how TeeterToss was born! Perfect for school programs. Let me walk you through the INPEX submission process and how I got Gopher Sports on board...</div>
+            </div>
+            <div class="mock-inp">
+              <div class="mock-inp-field">Ask anything about patents, manufacturing...</div>
+              <div class="mock-inp-btn"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROOF BAR ═══ -->
+<div class="proof-bar">
+  <div class="container">
+    <div class="proof-inner">
+      <div class="proof-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        2× INPEX Award Winner
+      </div>
+      <div class="proof-item">
+        <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Partnered with Gopher Sports
+      </div>
+      <div class="proof-item">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        USPTO Patent Strategy Inside
+      </div>
+      <div class="proof-item">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        24/7 AI Availability
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ WHAT IS IT ═══ -->
+<section class="what-section section" id="what">
+  <div class="container">
+    <div class="what-inner">
+      <div class="reveal">
+        <p class="section-label">What Is Ask Darryl AI</p>
+        <h2 class="section-title">Your Idea Has a <span>Coach Now</span></h2>
+        <p class="section-sub">Ask Darryl AI is an always-on coaching assistant trained on Darryl Minchenko's 20+ years of real invention experience. Ask any question and get specific, actionable answers — not generic advice.</p>
+        <ul class="what-features">
+          <li class="what-feature">
+            <div class="what-feat-icon g">🎯</div>
+            <div>
+              <div class="what-feat-title">Personalized to Your Idea</div>
+              <div class="what-feat-body">Tell the AI about your invention and it tailors every answer to your specific situation — not textbook theory.</div>
+            </div>
+          </li>
+          <li class="what-feature">
+            <div class="what-feat-icon o">⚡</div>
+            <div>
+              <div class="what-feat-title">Instant Answers, 24/7</div>
+              <div class="what-feat-body">No scheduling. No waiting. Ask your question at 2am on a Sunday and get a detailed, expert response in seconds.</div>
+            </div>
+          </li>
+          <li class="what-feature">
+            <div class="what-feat-icon p">🔒</div>
+            <div>
+              <div class="what-feat-title">Private Member Portal</div>
+              <div class="what-feat-body">Your conversations and your ideas stay private. Exclusive access is only granted to package purchasers.</div>
+            </div>
+          </li>
+          <li class="what-feature">
+            <div class="what-feat-icon gold">🏆</div>
+            <div>
+              <div class="what-feat-title">Real-World Proven Knowledge</div>
+              <div class="what-feat-body">Trained on the same strategies Darryl used to win 2 INPEX awards and land a national distribution deal with Gopher Sports.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="reveal" style="transition-delay:.1s">
+        <div class="what-stats">
+          <div class="what-stat">
+            <div class="what-stat-num">2×</div>
+            <div class="what-stat-label">INPEX Award-Winning Inventions</div>
+            <div class="what-stat-sublabel">Silver 2006 · Gold 2017</div>
+          </div>
+          <div class="what-stat">
+            <div class="what-stat-num">30</div>
+            <div class="what-stat-label">Days solo in China manufacturing his first product</div>
+            <div class="what-stat-sublabel">Real manufacturing experience</div>
+          </div>
+          <div class="what-stat">
+            <div class="what-stat-num">$60</div>
+            <div class="what-stat-label">Cost to file a USPTO Provisional Patent — Darryl shows you how</div>
+            <div class="what-stat-sublabel">No lawyer needed</div>
+          </div>
+          <div class="what-stat">
+            <div class="what-stat-num">24/7</div>
+            <div class="what-stat-label">AI availability — ask any question any time</div>
+            <div class="what-stat-sublabel">darryl@askdarryl.ai</div>
+          </div>
+        </div>
+        <div style="margin-top:20px;text-align:center">
+          <a href="https://dreamkitsystem.com/product/ask-darryl-ai-personal-inventor-coach/" target="_blank" class="btn btn-green btn-md">
+            Get AI Access Now — $50
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HOW IT WORKS ═══ -->
+<section class="how-section section">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="section-label">Simple Process</p>
+      <h2 class="section-title orange">How It <span>Works</span></h2>
+      <p class="section-sub" style="margin:0 auto">Get your personalized invention coaching in four simple steps.</p>
+    </div>
+    <div class="how-steps">
+      <div class="how-step reveal" style="transition-delay:.05s">
+        <div class="how-step-num">1</div>
+        <div class="how-step-icon">🛒</div>
+        <div class="how-step-title">Purchase Access</div>
+        <div class="how-step-body">Choose the AI Chat package ($50) or the Complete System ($200) which includes AI access free. One-time payment, lifetime access.</div>
+      </div>
+      <div class="how-step reveal" style="transition-delay:.1s">
+        <div class="how-step-num">2</div>
+        <div class="how-step-icon">🔐</div>
+        <div class="how-step-title">Log In & Access</div>
+        <div class="how-step-body">Your Dream Kit System account is automatically granted access to the private AI chat portal at <strong style="color:#fff">dreamkitsystem.com</strong>.</div>
+      </div>
+      <div class="how-step reveal" style="transition-delay:.15s">
+        <div class="how-step-num">3</div>
+        <div class="how-step-icon">💬</div>
+        <div class="how-step-title">Ask Your Question</div>
+        <div class="how-step-body">Type any question about your invention, patents, manufacturing, business registration, or pitching — and get an expert answer instantly.</div>
+      </div>
+      <div class="how-step reveal" style="transition-delay:.2s">
+        <div class="how-step-num">4</div>
+        <div class="how-step-icon">🚀</div>
+        <div class="how-step-title">Launch Your Idea</div>
+        <div class="how-step-body">Follow Darryl's step-by-step guidance to protect, manufacture, and bring your product to market — just like he did with two award-winning inventions.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EXPERTISE TOPICS ═══ -->
+<section class="topics-section section" id="topics">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="section-label">Areas of Expertise</p>
+      <h2 class="section-title">Ask About <span>Any of These</span></h2>
+      <p class="section-sub">The AI is trained on Darryl's full knowledge base — every topic he's mastered over 20+ years.</p>
+    </div>
+    <div class="topics-grid">
+      <div class="topic-card c1 reveal" style="transition-delay:.05s">
+        <div class="topic-icon">📄</div>
+        <div class="topic-title">USPTO Patent Strategy</div>
+        <div class="topic-body">Learn how to file a $60 Provisional Patent Application yourself — no lawyer required. Get 12 months of "Patent Pending" status and protect your idea before talking to manufacturers or investors.</div>
+        <div class="topic-tags"><span class="topic-tag">Provisional Patent</span><span class="topic-tag">$60 Filing</span><span class="topic-tag">Patent Pending</span></div>
+      </div>
+      <div class="topic-card c2 reveal" style="transition-delay:.1s">
+        <div class="topic-icon">📝</div>
+        <div class="topic-title">NDAs & IP Protection</div>
+        <div class="topic-body">Understand when and how to use Non-Disclosure Agreements, the Mailing Rule protection method, and how to notarize your invention drawings before approaching anyone — exactly how Darryl did it.</div>
+        <div class="topic-tags"><span class="topic-tag">NDA Templates</span><span class="topic-tag">Notarization</span><span class="topic-tag">Mailing Rule</span></div>
+      </div>
+      <div class="topic-card c3 reveal" style="transition-delay:.15s">
+        <div class="topic-icon">🏭</div>
+        <div class="topic-title">China Manufacturing</div>
+        <div class="topic-body">Get step-by-step guidance on finding reliable factories on Alibaba, vetting suppliers, understanding tooling costs ($2k–$10k), MOQ negotiation, and quality control — from someone who actually did it solo.</div>
+        <div class="topic-tags"><span class="topic-tag">Alibaba Sourcing</span><span class="topic-tag">Tooling</span><span class="topic-tag">MOQ</span></div>
+      </div>
+      <div class="topic-card c4 reveal" style="transition-delay:.05s">
+        <div class="topic-icon">🇺🇸</div>
+        <div class="topic-title">USA Business Registration</div>
+        <div class="topic-body">Learn how to form an LLC, get your State Tax ID and EIN, and set up a legitimate US business entity so you can sign contracts, open business accounts, and approach distributors professionally.</div>
+        <div class="topic-tags"><span class="topic-tag">LLC Formation</span><span class="topic-tag">State Tax ID</span><span class="topic-tag">EIN</span></div>
+      </div>
+      <div class="topic-card c5 reveal" style="transition-delay:.1s">
+        <div class="topic-icon">📊</div>
+        <div class="topic-title">Market Validation</div>
+        <div class="topic-body">Before spending a dollar on manufacturing, learn Darryl's 3-step method to validate real market demand — street campaigns, trade show strategy, and how to get honest feedback from retailers and buyers.</div>
+        <div class="topic-tags"><span class="topic-tag">INPEX Strategy</span><span class="topic-tag">Trade Shows</span><span class="topic-tag">Validation</span></div>
+      </div>
+      <div class="topic-card c6 reveal" style="transition-delay:.15s">
+        <div class="topic-icon">🚀</div>
+        <div class="topic-title">Pitching to Major Brands</div>
+        <div class="topic-body">Learn how to approach Gopher Sports, ESPN, NBA, NFL, Disney, and other major brands with your product. Darryl has pitched to all of them — and he'll show you exactly how to get your foot in the door.</div>
+        <div class="topic-tags"><span class="topic-tag">Distributor Pitch</span><span class="topic-tag">Brand Outreach</span><span class="topic-tag">One-Pager</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT DARRYL ═══ -->
+<section class="about-section section" id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="reveal">
+        <p class="section-label">The Man Behind the AI</p>
+        <h2 class="section-title">Meet <span>Darryl</span><br>Minchenko</h2>
+        <p class="about-quote">"No more pushing or pulling to work out. I want to introduce <strong>the world to my inventions, brands and products</strong> — because when movement feels like play, everybody wins."</p>
+        <p class="about-bio">Darryl Minchenko is a 2× INPEX Award-winning inventor, author of 3 how-to books, and the founder of Dream Kit System. He traveled solo to China for 30 days to manufacture his first product, has pitched to ESPN, NBA, NFL, Disney, and McDonald's, and secured a national distribution partnership with Gopher Sports in 2020. Now he's packed everything he knows into an AI that works for you 24/7.</p>
+        <div class="about-awards">
+          <div class="about-award">
+            <div class="about-award-medal">🥈</div>
+            <div>
+              <div class="about-award-year">INPEX 2006</div>
+              <div class="about-award-name">Silver Medal — Best Toy &amp; Game · SofTToss Golf</div>
+            </div>
+          </div>
+          <div class="about-award">
+            <div class="about-award-medal">🥇</div>
+            <div>
+              <div class="about-award-year">INPEX 2017</div>
+              <div class="about-award-name">Gold Medal — Best Sport · TeeterToss &amp; RingSwing</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:.1s">
+        <div class="about-timeline">
+          <div class="about-tl-item">
+            <div class="about-tl-dot"></div>
+            <div class="about-tl-year">The Beginning</div>
+            <div class="about-tl-title">First Invention Idea</div>
+            <div class="about-tl-body">Darryl developed his first invention, documented it properly, protected it with notarized drawings, and prepared to take it to the world — the same process he now teaches.</div>
+          </div>
+          <div class="about-tl-item">
+            <div class="about-tl-dot" style="border-color:var(--gold)"></div>
+            <div class="about-tl-year">INPEX 2006</div>
+            <div class="about-tl-title">Silver Medal — SofTToss Golf</div>
+            <div class="about-tl-body">First major validation. SofTToss Golf won the Silver Medal for Best Toy & Game at one of the world's largest invention conventions, proving his system worked.</div>
+          </div>
+          <div class="about-tl-item">
+            <div class="about-tl-dot" style="border-color:var(--orange)"></div>
+            <div class="about-tl-year">The China Trip</div>
+            <div class="about-tl-title">30 Days Solo Manufacturing</div>
+            <div class="about-tl-body">Before manufacturing networks existed online, Darryl flew to China alone for 30 days to tool up and manufacture his product. He learned everything the hard way — so you don't have to.</div>
+          </div>
+          <div class="about-tl-item">
+            <div class="about-tl-dot" style="border-color:var(--gold)"></div>
+            <div class="about-tl-year">INPEX 2017</div>
+            <div class="about-tl-title">Gold Medal — TeeterToss &amp; RingSwing</div>
+            <div class="about-tl-body">Eleven years later, Darryl struck gold — literally. TeeterToss & RingSwing won the INPEX 2017 Gold Medal for Best Sport, cementing his reputation as a serial inventor.</div>
+          </div>
+          <div class="about-tl-item">
+            <div class="about-tl-dot" style="border-color:var(--green)"></div>
+            <div class="about-tl-year">2020</div>
+            <div class="about-tl-title">Gopher Sports Partnership</div>
+            <div class="about-tl-body">Gopher Sports — the #1 PE equipment supplier in North America — officially partnered with Dream Kit System, bringing Darryl's products to schools, YMCAs, and communities nationwide.</div>
+          </div>
+          <div class="about-tl-item">
+            <div class="about-tl-dot" style="border-color:var(--purple)"></div>
+            <div class="about-tl-year">Today</div>
+            <div class="about-tl-title">Ask Darryl AI</div>
+            <div class="about-tl-body">Everything Darryl has learned — every patent filed, every manufacturer vetted, every pitch made — is now available to you as an AI coach, 24 hours a day.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRICING ═══ -->
+<section class="pricing-section section" id="pricing">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="section-label">Choose Your Path</p>
+      <h2 class="section-title">Start <span>Coaching Today</span></h2>
+      <p class="section-sub">Every package includes instant access. Real-world value up to $1,000 — available now at a fraction of the price.</p>
+    </div>
+    <p class="pricing-note reveal" style="transition-delay:.1s">
+      Full system real-world value: <del>$1,000</del> — yours now for <strong>$200</strong> &nbsp;·&nbsp; AI Chat standalone: <del>$200</del> → <strong>$50</strong>
+    </p>
+
+    <div class="pricing-grid reveal" style="transition-delay:.15s">
+
+      <!-- AI CARD — FEATURED LEFT, GLOWING -->
+      <div class="p-card ai-featured">
+        <div class="p-ribbon green">🤖 New · AI-Powered</div>
+        <div class="p-card-top">
+          <div class="p-card-icon">🧠</div>
+          <div class="p-card-name">Ask Darryl AI</div>
+          <div class="p-card-tagline">Personal AI coaching — available 24/7 at darryl@askdarryl.ai</div>
+          <div class="p-price-block">
+            <div class="p-original">Real value: $200</div>
+            <div class="p-price"><span class="amount" style="color:var(--green)">$50</span><span class="period"> one-time</span></div>
+            <span class="p-save">Save $150 — 75% OFF</span>
+          </div>
+        </div>
+        <div class="p-div"></div>
+        <ul class="p-features">
+          <li class="p-feat"><span class="p-check g">✓</span><span><span class="p-ai-tag">AI</span></span><span>Personalized chat at <strong style="color:var(--green)">darryl@askdarryl.ai</strong></span></li>
+          <li class="p-feat"><span class="p-check g">✓</span>Ask anything — patents, manufacturing, pitching</li>
+          <li class="p-feat"><span class="p-check g">✓</span>Advice tailored to your specific idea</li>
+          <li class="p-feat"><span class="p-check g">✓</span>24/7 availability — no scheduling</li>
+          <li class="p-feat"><span class="p-check g">✓</span>Private AI member portal access</li>
+          <li class="p-feat"><span class="p-check g">✓</span><span class="p-free-tag">FREE</span>&nbsp;Digital Property Intro Guide</li>
+        </ul>
+        <div class="p-div"></div>
+        <div class="p-btns">
+          <a href="https://dreamkitsystem.com/product/ask-darryl-ai-personal-inventor-coach/" target="_blank" class="btn btn-green btn-md btn-full">
+            Get AI Access — $50
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://dreamkitsystem.com/product/ask-darryl-ai-personal-inventor-coach/" target="_blank" class="btn btn-outline-green btn-sm btn-full">View Product Details</a>
+        </div>
+      </div>
+
+      <!-- AUDIOBOOK CARD -->
+      <div class="p-card standard">
+        <div class="p-card-top">
+          <div class="p-card-icon">🎧</div>
+          <div class="p-card-name">Audiobook Course</div>
+          <div class="p-card-tagline">The 10-step audio guide to the 6 Industry Secrets. Learn anywhere.</div>
+          <div class="p-price-block">
+            <div class="p-original">Real value: $400</div>
+            <div class="p-price"><span class="amount">$150</span><span class="period"> one-time</span></div>
+            <span class="p-save">Save $250 — 63% OFF</span>
+          </div>
+        </div>
+        <div class="p-div"></div>
+        <ul class="p-features">
+          <li class="p-feat"><span class="p-check o">✓</span>10-Step Strategic Audio Curriculum</li>
+          <li class="p-feat"><span class="p-check o">✓</span>The 6 Industry Secrets Revealed</li>
+          <li class="p-feat"><span class="p-check o">✓</span>Mindset &amp; Execution Mastery</li>
+          <li class="p-feat"><span class="p-check o">✓</span>Notarization &amp; Mailing Rule IP Protection</li>
+          <li class="p-feat"><span class="p-check o">✓</span>USPTO Provisional Patent ($60) Strategy</li>
+          <li class="p-feat"><span class="p-check o">✓</span><span class="p-free-tag">FREE</span>&nbsp;Inventor Quick-Start Checklist</li>
+          <li class="p-feat"><span class="p-check o">✓</span><span class="p-free-tag">FREE</span>&nbsp;NDA Template Download</li>
+        </ul>
+        <div class="p-div"></div>
+        <div class="p-btns">
+          <a href="https://dreamkitsystem.com/product/the-dream-kit-system-audiobook-course/" target="_blank" class="btn btn-orange btn-md btn-full">
+            Buy Audiobook — $150
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://dreamkitsystem.com/product/the-dream-kit-system-audiobook-course/" target="_blank" class="btn btn-sm btn-full" style="background:transparent;border:1px solid #e8e6e0;color:#374151">View Details</a>
+        </div>
+      </div>
+
+      <!-- COMPLETE SYSTEM — BEST VALUE -->
+      <div class="p-card featured-orange">
+        <div class="p-ribbon orange">🔥 Best Value — Everything Included</div>
+        <div class="p-card-top">
+          <div class="p-card-icon">🚀</div>
+          <div class="p-card-name">The Complete System</div>
+          <div class="p-card-tagline">The total package for serious builders. Every tool, every resource, AI included.</div>
+          <div class="p-price-block">
+            <div class="p-original">Real value: $1,000</div>
+            <div class="p-price"><span class="amount">$200</span><span class="period"> one-time</span></div>
+            <span class="p-save">Save $800 — 80% OFF</span>
+          </div>
+        </div>
+        <div class="p-div"></div>
+        <ul class="p-features">
+          <li class="p-feat"><span class="p-check o">✓</span>Includes Full Audiobook Course</li>
+          <li class="p-feat"><span class="p-check o">✓</span><span class="p-free-tag">FREE</span>&nbsp;3-Part Digital Property Blueprint (Steps 1–10)</li>
+          <li class="p-feat"><span class="p-check o">✓</span><span class="p-free-tag">FREE</span>&nbsp;Professional USA Business Registration</li>
+          <li class="p-feat"><span class="p-check o">✓</span><span class="p-free-tag">FREE</span>&nbsp;State Tax ID &amp; Registration Filing</li>
+          <li class="p-feat"><span class="p-check o">✓</span><span class="p-free-tag">FREE</span>&nbsp;Ask Darryl AI Chat Access</li>
+          <li class="p-feat"><span class="p-check o">✓</span><span class="p-free-tag">FREE</span>&nbsp;NDA &amp; Confidentiality Templates</li>
+          <li class="p-feat"><span class="p-check o">✓</span><span class="p-free-tag">FREE</span>&nbsp;Manufacturing &amp; China Sourcing Guide</li>
+          <li class="p-feat"><span class="p-check o">✓</span><span class="p-free-tag">FREE</span>&nbsp;Inventor Quick-Start Checklist</li>
+        </ul>
+        <div class="p-div"></div>
+        <div class="p-btns">
+          <a href="https://dreamkitsystem.com/product/the-complete-dream-kit-system-the-ultimate-package/" target="_blank" class="btn btn-orange btn-md btn-full">
+            Get Full System — $200
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://dreamkitsystem.com/product/the-complete-dream-kit-system-the-ultimate-package/" target="_blank" class="btn btn-sm btn-full" style="background:transparent;border:1px solid #e8e6e0;color:#374151">View Package</a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="pricing-guarantee reveal" style="transition-delay:.25s">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Secure checkout on DreamKitSystem.com &nbsp;·&nbsp; Instant access after payment &nbsp;·&nbsp; 100% satisfaction backed by Darryl
+    </p>
+    <p style="text-align:center;margin-top:20px">
+      <a href="https://dreamkitsystem.com/courses/" target="_blank" style="font-family:var(--fh);font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.35);border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:2px;transition:color .2s" onmouseover="this.style.color='rgba(255,255,255,.7)'" onmouseout="this.style.color='rgba(255,255,255,.35)'">Browse all courses on DreamKitSystem.com →</a>
+    </p>
+  </div>
+</section>
+
+<!-- ═══ SAMPLE CONVERSATION ═══ -->
+<section class="demo-section section">
+  <div class="container">
+    <div class="demo-inner">
+      <div class="reveal">
+        <p class="section-label">See It In Action</p>
+        <h2 class="section-title">Real Conversations, <span>Real Answers</span></h2>
+        <p class="section-sub" style="margin-bottom:32px">Ask Darryl AI gives you the same specific, step-by-step guidance that Darryl gives in person — any time you need it.</p>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;align-items:flex-start;gap:14px;padding:18px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:var(--r)">
+            <div style="font-size:24px;flex-shrink:0">🛡️</div>
+            <div>
+              <div style="font-family:var(--fh);font-size:15px;font-weight:700;color:#fff;text-transform:uppercase;margin-bottom:4px">Protect Before You Show Anyone</div>
+              <div style="font-size:13px;color:rgba(255,255,255,.5);line-height:1.6">Ask about NDAs, notarization, provisional patents — get exact steps with real costs included.</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:14px;padding:18px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:var(--r)">
+            <div style="font-size:24px;flex-shrink:0">🏭</div>
+            <div>
+              <div style="font-family:var(--fh);font-size:15px;font-weight:700;color:#fff;text-transform:uppercase;margin-bottom:4px">Find the Right Manufacturer</div>
+              <div style="font-size:13px;color:rgba(255,255,255,.5);line-height:1.6">Get Alibaba sourcing strategies, how to vet factories, tooling cost expectations, and MOQ negotiation tips from someone who did it solo in China.</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:14px;padding:18px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:var(--r)">
+            <div style="font-size:24px;flex-shrink:0">🤝</div>
+            <div>
+              <div style="font-family:var(--fh);font-size:15px;font-weight:700;color:#fff;text-transform:uppercase;margin-bottom:4px">Land Major Distribution Deals</div>
+              <div style="font-size:13px;color:rgba(255,255,255,.5);line-height:1.6">Learn how to approach Gopher Sports, ESPN, NBA, NFL, Disney, and other major brands with a compelling product pitch.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:.1s">
+        <div class="demo-chat">
+          <div class="demo-chat-hdr">
+            <div class="demo-chat-av">D</div>
+            <div>
+              <div class="demo-chat-name">Ask Darryl AI</div>
+              <div class="demo-chat-status">● Online · darryl@askdarryl.ai</div>
+            </div>
+          </div>
+          <div class="demo-msgs">
+            <div class="demo-msg ai">Hey! I'm Ask Darryl AI. I've won 2 INPEX awards, manufactured products in China, and partnered with Gopher Sports. What are you working on?</div>
+            <div class="demo-msg user">I want to find a manufacturer in China for my product but I don't know where to start.</div>
+            <div class="demo-msg ai"><strong>Here's your step-by-step starting point:</strong><br><br>1. Go to <strong>Alibaba.com</strong> and search your product category. Filter for "Verified Supplier" and "Trade Assurance" only.<br>2. Contact at least <strong>10 factories</strong> — not 2 or 3. Get competing quotes.<br>3. Before sharing ANY details, have them sign an <strong>NDA first</strong>.<br>4. Request a <strong>sample order</strong> — never pay tooling ($2k–$10k) without a signed sample agreement.<br><br>What is your product? I'll give you more specific advice.</div>
+            <div class="demo-msg user">It's a toy for kids, physical activity focused.</div>
+            <div class="demo-msg ai">Perfect category — that's exactly my space. For physical toys, look for factories in <strong>Guangdong and Zhejiang provinces</strong>. Your tooling will likely be <strong>$3k–$6k</strong>. I went through this exact process for TeeterToss. Want me to walk you through the Alibaba RFQ process step by step?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section class="faq-section section" id="faq">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="section-label">Got Questions</p>
+      <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+    </div>
+    <div class="faq-wrap">
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">What is Ask Darryl AI exactly?</span>
+          <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-ans"><p>Ask Darryl AI is a personalized AI coaching assistant trained on the expertise and real-world experience of Darryl Minchenko — a 2x INPEX Award-winning inventor. You interact with it via chat at darryl@askdarryl.ai, ask questions about your invention, and receive specific, actionable coaching based on Darryl's proven methods — instantly, 24/7.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">How is this different from just Googling my question?</span>
+          <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-ans"><p>Google gives you generic information. Ask Darryl AI gives you specific guidance based on YOUR idea, YOUR situation, and Darryl's real experience. It remembers your context in a conversation, asks follow-up questions to understand your specific case, and gives you numbered steps with real costs — not vague blog articles. It's the difference between a search engine and a mentor who has actually done it.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">How do I access the chat after purchasing?</span>
+          <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-ans"><p>After purchasing on DreamKitSystem.com, your account is automatically granted member access. You can then log in to dreamkitsystem.com and navigate to the AI Chat page. Access is instant — no waiting, no approval process. You'll also receive a confirmation email with the direct link.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">Is this a one-time payment or a subscription?</span>
+          <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-ans"><p>It is a one-time payment with lifetime access. Pay once — $50 for the AI Chat package or $200 for the Complete System — and you have ongoing access to the AI coaching portal. No monthly fees, no renewal, no subscriptions.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">What does the Complete System include that the AI Chat alone doesn't?</span>
+          <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-ans"><p>The Complete System ($200) includes everything in the AI Chat package PLUS the full Audiobook Course (6 Industry Secrets), the 3-Part Digital Property Blueprint (10-step manual), professional USA business registration, state tax ID filing, NDA templates, and a manufacturing & China sourcing guide. It's the complete toolkit — the AI Chat is a powerful standalone, but the Full System is everything Darryl has built.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">Do I need any prior business or legal experience?</span>
+          <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-ans"><p>None whatsoever. The AI is designed to guide complete beginners step-by-step in plain language — no legal jargon, no MBA required. Darryl wrote his books as "easy reads" and the AI reflects the same approach: clear, specific, encouraging guidance for first-time inventors and entrepreneurs.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">Will this work for inventors outside the USA?</span>
+          <span class="faq-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-ans"><p>The AI coaching on patents, manufacturing, market validation, and pitching to brands is universal and applies globally. The USA business registration service included in the Complete System is specifically for US state-level registration. International users benefit fully from the AI chat and all educational content with no restrictions.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FINAL CTA ═══ -->
+<section class="final-section section">
+  <div class="container">
+    <div class="final-inner reveal">
+      <h2>Your Idea Deserves<br><span>To Be Launched.</span></h2>
+      <p>Darryl went to China alone, won two INPEX awards, and got a national distribution deal with Gopher Sports — all using the same knowledge that's now available to you as an AI coach, right now, for $50.</p>
+      <div class="final-btns">
+        <a href="https://dreamkitsystem.com/product/ask-darryl-ai-personal-inventor-coach/" target="_blank" class="btn btn-green btn-lg">
+          <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Get AI Access — $50
+        </a>
+        <a href="https://dreamkitsystem.com/product/the-complete-dream-kit-system-the-ultimate-package/" target="_blank" class="btn btn-orange btn-lg">
+          Get Full System — $200
+        </a>
+      </div>
+      <p class="final-note">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Secure checkout · Instant access · 100% satisfaction guaranteed
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">Ask<span>Darryl</span>.ai</div>
+      <div class="footer-links">
+        <a href="https://dreamkitsystem.com" target="_blank" class="footer-link">DreamKitSystem.com</a>
+        <a href="https://dreamkitsystem.com/courses/" target="_blank" class="footer-link">All Courses</a>
+        <a href="https://dreamkitsystem.com/product/ask-darryl-ai-personal-inventor-coach/" target="_blank" class="footer-link">Get AI Access</a>
+        <a href="#faq" class="footer-link">FAQ</a>
+        <a href="#pricing" class="footer-link">Pricing</a>
+      </div>
+      <div class="footer-copy">&copy; 2025 Dream Kit System · Darryl Minchenko</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ── Nav scroll ── */
+window.addEventListener('scroll', function() {
+  var nav = document.getElementById('mainNav');
+  if (window.scrollY > 50) { nav.classList.add('scrolled'); }
+  else { nav.classList.remove('scrolled'); }
+}, { passive: true });
+
+/* ── Mobile menu ── */
+document.getElementById('menuBtn').addEventListener('click', function() {
+  document.getElementById('mobileMenu').classList.add('open');
+  document.body.style.overflow = 'hidden';
+});
+document.getElementById('menuClose').addEventListener('click', function() {
+  closeMobileMenu();
+});
+function closeMobileMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeMobileMenu();
+});
+
+/* ── FAQ accordion ── */
+function toggleFaq(btn) {
+  var item = btn.closest('.faq-item');
+  var isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(i) { i.classList.remove('open'); });
+  if (!isOpen) item.classList.add('open');
+}
+
+/* ── Scroll reveal ── */
+(function() {
+  var els = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.08 });
+  els.forEach(function(el) { io.observe(el); });
+})();
+
+/* ── Smooth anchor scroll (accounts for fixed nav) ── */
+document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+  a.addEventListener('click', function(e) {
+    var target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      var offset = target.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: offset, behavior: 'smooth' });
+    }
+  });
+});
+</script>
 </body>
 </html>
